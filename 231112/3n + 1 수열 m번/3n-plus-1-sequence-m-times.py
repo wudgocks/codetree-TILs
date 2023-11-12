@@ -1,10 +1,9 @@
 m = int(input())
 
-count = 0
 # 입력
 for _ in range(m) :
     n = int(input())
-    
+    count = 0
     while True :
         if n == 1 :
             break
@@ -18,5 +17,4 @@ for _ in range(m) :
             n *=3
             n +=1
             count += 1
-
-print(count)
+    print(count)
