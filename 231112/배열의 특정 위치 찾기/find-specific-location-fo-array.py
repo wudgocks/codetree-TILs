@@ -9,7 +9,7 @@ avg3 = 0
 cnt3 = 0
 
 for i in range(len(lst)) :
-    if i % 2 == 1 :
+    if (i+1) % 2 == 0 :
         sumEv += lst[i]
     if (i+1) % 3 == 0 :
         sum3 += lst[i]
