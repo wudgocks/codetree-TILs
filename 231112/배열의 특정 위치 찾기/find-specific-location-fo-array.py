@@ -8,11 +8,11 @@ sum3 = 0
 avg3 = 0
 cnt3 = 0
 
-for element in lst :
-    if element % 2 == 0 :
-        sumEv += element
-    if element % 3 == 0 :
-        sum3 += element
+for i in range(len(lst)) :
+    if i % 2 == 1 :
+        sumEv += lst[i]
+    if (i+1) % 3 == 0 :
+        sum3 += lst[i]
         cnt3 += 1
 
 print(sumEv, end = " ")
