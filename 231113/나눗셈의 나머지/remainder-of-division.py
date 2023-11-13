@@ -4,7 +4,7 @@ remain = []
 counter = [0] * 10 # 각 나머지가 나온 횟수를 저장할 카운터 리스트
 
 for i in range(10) :
-    if a//b == 0 :
+    if a//b <= 1 :
         remain.append(a%b)
         break
     remain.append(a%b)
