@@ -21,6 +21,9 @@ for i in range(q) :
             if lst[j] == inLst[1] : 
                 print(j + 1)
                 break
+            if inLst[1] not in lst :
+                print(0)
+                break
     if inLst[0] == 3:
         a,b = inLst[1]-1, inLst[2]-1
         for j in range(a,b + 1) :
