@@ -9,5 +9,5 @@ for i in range(len(lst)) :
 for element in ten_lst :
     counting[element] += 1
 
-for i in range(1, len(ten_lst) + 1) :
+for i in range(1, 10) :
     print(f'{i} - {counting[i]}')
