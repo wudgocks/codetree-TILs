@@ -10,4 +10,4 @@ for i in range(len(lst)) :
         new_lst.append(lst[i])
 
 for i in range(len(new_lst)) :
-    print(new_lst[i])
+    print(new_lst[i], end = " ")
