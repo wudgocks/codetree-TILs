@@ -3,7 +3,7 @@ import sys
 n = int(input())
 
 lst = list(map(int,input().split()))
-counting = [0] * 1000
+counting = [0] * 1001
 
 newLst = []
 
