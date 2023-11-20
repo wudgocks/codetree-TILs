@@ -8,7 +8,7 @@ checker = 0
 for string in lst :
     if string[len(string)-1] == one :
         print(string)
-        counter = 1
+        checker += 1
 
 if checker == 0 :
     print('None')
