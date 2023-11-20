@@ -15,4 +15,8 @@ for string in str_lst :
             sum_len += len(string)
             counter += 1
 
-print(f'{counter} {sum_len/counter:.2f}')
+try :
+    print(f'{counter} {sum_len/counter:.2f}')
+
+except ZeroDivisionError :
+    print(f'{counter} -nan')
