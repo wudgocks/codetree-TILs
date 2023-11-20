@@ -10,10 +10,9 @@ for i in range(n) :
 char =input()
 
 for string in str_lst :
-    for element in string :
-        if element[0] == char :
-            sum_len += len(string)
-            counter += 1
+    if string[0] == char :
+        sum_len += len(string)
+        counter += 1
 
 try :
     print(f'{counter} {sum_len/counter:.2f}')
