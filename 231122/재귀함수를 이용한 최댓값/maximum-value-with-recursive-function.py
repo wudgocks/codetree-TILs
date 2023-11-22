@@ -1,6 +1,6 @@
 n = int(input())
 
-lst = list(map(int,input().split()))
+arr = list(map(int,input().split()))
 
 def maxValue(a) :
     if a == 0 :
