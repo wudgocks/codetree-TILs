@@ -1,13 +1,15 @@
 def check_palindrome(string) :
     reverstring = ''
-    for c in string :
-        reverstring += c
+    string = list(string)
+    
+    for i in range(len(string)-1, -1, -1) :
+        reverstring += string[i]
     
     if string == reverstring :
         print("Yes")
     else :
         print("No")
-
+    
 _str = input()
 
 check_palindrome(_str)
