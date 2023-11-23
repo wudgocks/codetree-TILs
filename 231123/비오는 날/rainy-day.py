@@ -5,16 +5,16 @@ class Forcast :
         self.weather = weather
 
 n = int(input())
-
-forcast_info = []
+ans = Forcast('9999-99-99', '','')
 
 for _ in range(n) :
     date, day, weather = tuple(input().split())
-    forcast_info.append(Forcast(date,day, weather))
 
-arr = [d.date for d in forcast_info]
-arr.sort()
-for i in range(n) :
-    if forcast_info[i].weather == 'Rain' :
-        print(forcast_info[i].date, forcast_info[i].day, forcast_info[i].weather)
-        break
+    f = Forcast(date,day,weather)
+
+    if weather == 'Rain' :
+
+        if ans.date >= f.date :
+            ans = f
+
+print(ans.date, ans.day, ans.weather)
