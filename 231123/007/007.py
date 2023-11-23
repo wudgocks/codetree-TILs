@@ -3,8 +3,9 @@ class _007 :
         self.secretCode = secretCode
         self.meetingPoint = meetingPoint
         self.time = time
-
-instance = _007('codetree', 'L', 13)
+arr = list(map(str,input().split()))
+arr[2] = int(arr[2])
+instance = _007(arr[0],arr[1],arr[2])
 print('secret code :', instance.secretCode)
 print('meeting point :', instance.meetingPoint)
 print('time :', instance.time)
