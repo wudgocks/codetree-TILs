@@ -6,7 +6,6 @@ class Local :
 
 n = int(input())
 local_info = []
-
 for _ in range(n) :
     name,addr, city = tuple(input().split())
     local_info.append(Local(name,addr,city))
@@ -16,6 +15,6 @@ arr.sort()
 
 for i in range(n) :
     if local_info[i].name == arr[n-1] :
-        print('name',local_info[n-1].name)
-        print('addr',local_info[n-1].addr)
-        print('city', local_info[n-1].city)
+        print('name',local_info[i].name)
+        print('addr',local_info[i].addr)
+        print('city', local_info[i].city)
