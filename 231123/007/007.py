@@ -3,9 +3,10 @@ class _007 :
         self.secretCode = secretCode
         self.meetingPoint = meetingPoint
         self.time = time
-arr = list(map(str,input().split()))
-arr[2] = int(arr[2])
-instance = _007(arr[0],arr[1],arr[2])
+
+s_code, m_point, time = tuple(input().split())
+
+instance = _007(s_code,m_point, int(time))
 print('secret code :', instance.secretCode)
 print('meeting point :', instance.meetingPoint)
 print('time :', instance.time)
