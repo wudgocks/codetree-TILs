@@ -1,6 +1,6 @@
-OFFSET = 50
+OFFSET = 100
 
-MAX_R = 100
+MAX_R = 200
 n = int(input())
 
 # 좌표 평면을 표현한 배열
