@@ -1,20 +1,21 @@
 n = int(input())
 
 lst = []
-counter_lst = [1]
+arr = []
+counterLst = []
 
 for i in range(n) :
     num = int(input())
     lst.append(num)
 
 counter = 1
-
 for i in range(len(lst)) :
-    if lst[i] == lst[i-1] :
+    # 값이 달라지면 checker = 1
+    if lst[i-1] == lst[i] :
         counter += 1
-    
-    elif i == 0 or lst[i] != lst[i-1] :
-        counter_lst.append(counter)
+        counterLst.append(counter)
+    else :
         counter = 1
-
-print(max(counter_lst))
+        counterLst.append(counter)
+        
+print(max(counterLst))
