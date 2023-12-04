@@ -6,8 +6,7 @@ lst = [
     for _ in range(n)
 ]
 
-counterLst = []
-
+ans,cnt = 0,0
 for i in range(len(lst)) :
     if lst[i] >= 0 :
         lst[i] = 0
@@ -18,9 +17,10 @@ counter = 1
 for i in range(len(lst)) :
     if i == 0 or lst[i] != lst[i-1] :
         counter = 1
-        counterLst.append(counter)
+
     else :
         counter += 1
-        counterLst.append(counter)
-        
-print(max(counterLst))
+
+    ans = max(ans,counter)
+
+print(ans)
