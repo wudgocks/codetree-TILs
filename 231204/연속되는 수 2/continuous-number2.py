@@ -1,7 +1,7 @@
 n = int(input())
 
 lst = []
-counter_lst = []
+counter_lst = [1]
 
 for i in range(n) :
     num = int(input())
