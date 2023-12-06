@@ -13,7 +13,7 @@ students = [
 
 for elem in students :
     counter[elem-1] += 1
-    if counter[elem-1] > k :
+    if counter[elem-1] >= k :
         break
 
 chker = False
