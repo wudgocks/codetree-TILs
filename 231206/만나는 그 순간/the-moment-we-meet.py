@@ -52,8 +52,14 @@ for i in range(m) :
 
         dstB -= t
 i =0
+notMatched = False
 for elem1,elem2 in zip(A_distance,B_distance) :
     i += 1
     if elem1 == elem2 :
         print(i)
+        notMatched = False
         break
+    notMatched = True
+
+if notMatched :
+    print(-1)
