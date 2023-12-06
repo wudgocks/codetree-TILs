@@ -13,13 +13,14 @@ students = [
 
 for elem in students :
     counter[elem-1] += 1
-
+    if counter[elem-1] > k :
+        break
 
 chker = False
 
-for element in counter :
-    if element == k :
-        print(counter[element + 1])
+for i in range(len(counter)) :
+    if counter[i] >= k :
+        print(i + 1)
         chker = False
         break
     chker = True
