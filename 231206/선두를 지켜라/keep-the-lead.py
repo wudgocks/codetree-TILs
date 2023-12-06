@@ -1,7 +1,7 @@
 MAX_T = 1000000
 
 n,m = map(int,input().split())
-pos_a, pos_b = [0] * (MAX_T + 1), [0] * ()
+pos_a, pos_b = [0] * (MAX_T + 1), [0] * (MAX_T + 1)
 
 # A가 매초마다 서있는 위치를 기록
 time_a = 1
