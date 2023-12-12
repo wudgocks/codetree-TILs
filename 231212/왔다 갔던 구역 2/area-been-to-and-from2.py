@@ -9,14 +9,15 @@ for i in range(n) :
     x,d = map(str,input().split())
     x = int(x)
     if d == 'R' :
-        for p in range(point,point + x) :
+        for p in range(point,point + x ) :
             checker[p] += 1
         point+= x
 
     if d == 'L' :
-        for p in range(point,point-x,-1) :
+        for p in range(point-1,point-x-1,-1) :
             checker[p] += 1
         point -= x
+
 
 leng = 0
 for element in checker :
