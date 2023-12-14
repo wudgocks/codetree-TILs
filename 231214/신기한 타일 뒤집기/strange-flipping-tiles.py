@@ -1,5 +1,5 @@
-MAX_R = 1000
-OFFSET = 50
+MAX_R = 10000
+OFFSET = 5000
 n = int(input())
 
 checker = [0] * (MAX_R + 1)
