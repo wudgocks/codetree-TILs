@@ -1,10 +1,11 @@
-MAX_R = 10000
-OFFSET = 5000
+MAX_R = 1000
+OFFSET = 50
 n = int(input())
 
 checker = [0] * (MAX_R + 1)
 
-point = OFFSET
+point = OFFSET-1
+
 for _ in range(n) :
     x,d = tuple(input().split())
     x = int(x)
@@ -14,7 +15,7 @@ for _ in range(n) :
         point += x-1
 
     if d =='L' :
-        for i in range(point-1,point-x-1,-1) :
+        for i in range(point,point-x,-1) :
             checker[i] = 2
         point -= x-1
 
