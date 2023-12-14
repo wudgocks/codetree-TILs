@@ -1,5 +1,5 @@
-MAX_R = 1000
-OFFSET = 500
+MAX_R = 10000
+OFFSET = 5000
 n = int(input())
 
 checker = [0] * (MAX_R + 1)
@@ -11,12 +11,12 @@ for _ in range(n) :
     if d =='R' :
         for i in range(point, point + x) :
             checker[i] = 1
-        point += x
+        point += x-1
 
     if d =='L' :
         for i in range(point-1,point-x-1,-1) :
             checker[i] = 2
-        point -= x
+        point -= x-1
 
 black = 0
 white = 0
