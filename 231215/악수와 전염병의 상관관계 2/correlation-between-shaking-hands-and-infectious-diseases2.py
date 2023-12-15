@@ -24,7 +24,7 @@ for shake in shakes :
     if infected[target1] :
         shake_num[target1] += 1
     if infected[target2] :
-        shake_num[target2] += 2
+        shake_num[target2] += 1
     
     if shake_num[target1] <= k and infected[target1] :
         infected[target2] = True
